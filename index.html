@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en-us" ng-app="zmbApp">
+	<head>
+		<title>Zeta Mu Beta | Long Beach</title>
+		<meta charset="UTF-8">
+		
+		<!-- CSS Dependencies -->
+		<link href="https://fonts.googleapis.com/css?family=Slabo" rel="stylesheet">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/animate.css">
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div class="row">
+				<div id="sidenav" class="col-xs-3 animated bounceInUp">
+					<div id="sidenav-home" class="text-center">
+						<h1 id="sidenav-home-link"><a href="#">ZETA MU BETA</a></h1>
+					</div> <!-- end sidenav-home -->
+
+					<ul id="sidenav-list" class="nav nav-pills nav-stacked text-center">
+							<li role="presentation" id="sidenav-list-about" class="active sidenav-list-item"><a href="#">ABOUT</a></li>
+							<li role="presentation" id="sidenav-list-brothers"class="sidenav-list-item"><a href="#">BROTHERS</a></li>
+							<li role="presentation" id="sidenav-list-family" class="sidenav-list-item"><a href="#">FAMILY</a></li>
+					</ul> <!-- end sidenav-list -->
+
+					<div id="contacts" class="text-center">
+						<p>CONTACT US:</p>
+						<p>zionsmightiestbrotherhood@gmail.com</p>
+						<p>FACEBOOK</p>
+						<p>INSTAGRAM</p>
+					</div> <!-- end contacts -->
+				</div> <!-- end sidenav -->
+
+				<div id="view-content"class="col-xs-9" ng-view>
+					<div class="row">
+						<div id="home-main" class="col-md-8">
+							<div class="panel panel-default animated bounceInUp">
+							  <div class="panel-body">
+							    <h2>ZETA MU BETA - LONG BEACH</h2>
+							    <h3>Zion's Mightiest Brotherhood '08</h3>
+							    <p>Multicultural Fraternity and Non-profit Organization</p>
+							  </div>
+							</div>
+						</div> <!-- end home-main-->
+
+						<div id="home-cornerstones" class="col-md-4 animated bounceInUp">
+							<div class="panel panel-default pulse">
+							  <div class="panel-body">
+							    <h2>UNITY</h2>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-body">
+							    <h2>STRENGTH</h2>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-body">
+							    <h2>DIVERSITY</h2>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-body">
+							    <h2>VIRTUE</h2>
+							  </div>
+							</div>
+							<div class="panel panel-default">
+							  <div class="panel-body">
+							    <h2>BROTHERHOOD</h2>
+							  </div>
+							</div>
+						</div> <!-- end home-cornerstones -->
+					</div> <!-- end row (home) -->
+				</div> <!-- end view -->
+			</div> <!-- end row (container) -->
+		</div> <!-- end container-fluid -->
+		
+
+		<!-- JS Dependencies -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<script src="jquery/jquery-extended.js"></script>
+		<script src="angular-app/app.js"></script>
+	</body>
+</html>
