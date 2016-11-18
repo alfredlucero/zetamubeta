@@ -1,11 +1,19 @@
 body {
+	font-size: 24px;
 	font-family: 'Slabo', serif;
+	color: #555;
 }
 
 #sidenav {
 	position: relative;
 	height: 100vh;
 	padding: 0;
+	-webkit-animation-delay: 0.25s;
+}
+
+#sidenav-list-home {
+	background-color: #333;
+	font-size: 36px;
 }
 
 .sidenav-list-item {
@@ -24,4 +32,12 @@ body {
 	padding: 15px;
 	background-color: #eee;
 	overflow-y: scroll;
+}
+
+#home-main {
+	-webkit-animation-delay: 0.5s;
+}
+
+#home-cornerstones {
+	-webkit-animation-delay: 0.75s;
 }
