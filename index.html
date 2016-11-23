@@ -15,10 +15,10 @@
 			<div class="row">
 				<div id="sidenav" class="col-xs-3 animated bounceInUp">
 					<ul id="sidenav-list" class="nav nav-pills nav-stacked text-center">
-							<li role="presentation" id="sidenav-list-home" class="active"><a href="#">ZMB</a></li>
-							<li role="presentation" id="sidenav-list-about" class="sidenav-list-item"><a href="#">ABOUT</a></li>
-							<li role="presentation" id="sidenav-list-brothers"class="sidenav-list-item"><a href="#">BROTHERS</a></li>
-							<li role="presentation" id="sidenav-list-family" class="sidenav-list-item"><a href="#">FAMILY</a></li>
+							<li role="navigation" id="sidenav-list-home" class="active sidenav-list-item"><a href="#">ZMB</a></li>
+							<li role="navigation" id="sidenav-list-about" class="sidenav-list-item"><a href="#">ABOUT</a></li>
+							<li role="navigation" id="sidenav-list-brothers"class="sidenav-list-item"><a href="#">BROTHERS</a></li>
+							<li role="navigation" id="sidenav-list-family" class="sidenav-list-item"><a href="#">FAMILY</a></li>
 					</ul> <!-- end sidenav-list -->
 
 					<div id="contacts" class="text-center">
@@ -31,20 +31,29 @@
 
 				<div id="view-content"class="col-xs-9" ng-view>
 					<div class="row">
-						<div id="home-main" class="col-md-8 animated bounceInUp">
+						
+						<div id="home" class="col-md-8 animated bounceInUp">
+							
 							<div class="panel panel-default">
-							  <div class="panel-body">
+							  <div id="home-header" class="panel-body">
 							    <h2>ZETA MU BETA - LONG BEACH</h2>
-							    <h3>Zion's Mightiest Brotherhood '08</h3>
+							    <h3>Zion's Mightiest Brotherhood founded '08</h3>
 							    <p>Multicultural Fraternity and Non-profit Organization</p>
 							  </div>
 							</div>
+
+							<div class="panel panel-default">
+								<div id="home-main" class="panel-body">
+								</div>
+							</div>
+
 						</div> <!-- end home-main-->
 
 						<div id="home-cornerstones" class="col-md-4 animated bounceInUp">
-							<div class="panel panel-default pulse">
-							  <div class="panel-body">
-							    <h2>UNITY</h2>
+							<div class="panel panel-default">
+							  <div id="home-cornerstones-unity" class="panel-body home-cornerstones-content">
+							  	<img class="home-cornerstones-img" src="images/unity.jpg" alt="Unity">
+							  	<h2 class="home-cornerstones-text">UNITY</h2>
 							  </div>
 							</div>
 							<div class="panel panel-default">

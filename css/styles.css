@@ -1,7 +1,45 @@
 body {
-	font-size: 24px;
+	font-size: 15px;
 	font-family: 'Slabo', serif;
-	color: #555;
+	line-height: 1.43;
+	letter-spacing: 2px;
+	color: #333;
+}
+
+h1 {
+	font-size: 30px;
+}
+
+h2 {
+	font-size: 25px;
+}
+
+h3 {
+	font-size: 20px;
+}
+
+/* unvisited link */
+a:link {
+    color: #1f6d50;
+}
+
+/* visited link */
+a:visited {
+    color: #1f6d50;
+}
+
+/* mouse over link */
+a:hover {
+    color: #9cd6c0;
+}
+
+/* selected link */
+a:active {
+    color: #9cd6c0;
+}
+
+.panel {
+	border: #eee 2px solid;
 }
 
 #sidenav {
@@ -13,11 +51,17 @@ body {
 
 #sidenav-list-home {
 	background-color: #333;
-	font-size: 36px;
+	font-size: 30px;
 }
 
 .sidenav-list-item {
-	font-size: 30px;
+	border: #eee 2px solid;
+	margin-top: 0 !important;
+	font-size: 25px;
+}
+
+li.active > a {
+	background-color: #1f6d50 !important;
 }
 
 #contacts {
@@ -30,14 +74,42 @@ body {
 #view-content {
 	height: 100vh;
 	padding: 15px;
-	background-color: #eee;
+	background-color: #333;
 	overflow-y: scroll;
 }
 
-#home-main {
+#home {
 	-webkit-animation-delay: 0.5s;
+}
+
+#home-main-img {
+	width: 100%;
+	height: 450px;
 }
 
 #home-cornerstones {
 	-webkit-animation-delay: 0.75s;
+}
+
+.home-cornerstones-content {
+	position: relative;
+	width: 100%;
+	height: 100px;
+}
+
+.home-cornerstones-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	opacity: 0.3;
+	z-index: 1;
+}
+
+.home-cornerstones-text {
+	position: absolute;
+	z-index: 10;
+	color: #111;
 }
