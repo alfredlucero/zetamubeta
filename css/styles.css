@@ -78,6 +78,11 @@ li.active > a {
 	overflow-y: scroll;
 }
 
+.view-content-title {
+	color: #1f6d50;
+	border-bottom: #eee 2px solid;
+}
+
 #home {
 	-webkit-animation-delay: 0.5s;
 }
@@ -110,6 +115,7 @@ li.active > a {
 
 .home-cornerstones-text {
 	position: absolute;
+	border-bottom: #eee 2px solid;
 	z-index: 10;
 	color: #111;
 }
