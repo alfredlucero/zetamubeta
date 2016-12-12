@@ -16,7 +16,9 @@ function config($routeProvider) {
 			}
 		})
 		.when('/brothers', {
-			templateUrl: 'angular-app/brothers/brothers.html',
+			templateUrl: 'angular-app/brothers-list/brothers-list.html',
+			controller: BrothersController,
+			controllerAs: 'vm',
 			access: {
 				restricted: false
 			}

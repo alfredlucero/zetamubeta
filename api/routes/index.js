@@ -1,11 +1,21 @@
 var express = require('express');
 var router = express.Router();
 
-// var ctrlHotels = require('../controllers/hotels.controllers.js');
-// var ctrlReviews = require('../controllers/reviews.controllers.js');
-// var ctrlUsers = require('../controllers/users.controllers.js');
+var ctrlBrothers = require('../controllers/brothers.controllers.js');
 
-// Hotel routes
+// Brother routes
+router
+	.route('/brothers')
+	.get(ctrlBrothers.brothersGetAll)
+	.post(ctrlBrothers.brothersAddOne);
+
+router
+	.route('/brothers/:brotherId')
+	.get(ctrlBrothers.brothersGetOne)
+	.put(ctrlBrothers.brothersUpdateOne)
+	.delete(ctrlBrothers.brothersDeleteOne);
+
+// Family routes
 // router
 // 	.route('/hotels')
 // 	.get(ctrlHotels.hotelsGetAll)
