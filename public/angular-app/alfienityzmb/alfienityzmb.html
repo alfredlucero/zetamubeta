@@ -2,17 +2,44 @@
 <h3>Brothers</h3>
 <h4>Add Brother to Database</h4>
 <form name="vm.addBrotherForm" ng-submit="vm.addBrother()">		
-	Brother Number: <input type="number" name="_id" required ng-pattern="/^[1-9]+$/" ng-model="vm.addBrotherData._id">
+	<p>Line Number:</p>
+	<input type="number" name="_id" required ng-pattern="/^[0-9]+$/" ng-model="vm.addBrotherData._id">
 	<div ng-show="vm.addBrotherForm._id.$dirty && vm.addBrotherForm._id.$invalid && vm.addBrotherSubmitted">
-			<p>Number must be at least 1 or greater.</p>
+			<p>Line number must be integer number (i.e. 10).</p>
+	</div>
+	
+	<p>Name:</p>
+	<input type="text" name="name" required ng-pattern="/^[A-Za-z\s]+$/" ng-model="vm.addBrotherData.name">
+	<div ng-show="vm.addBrotherForm.name.$dirty && vm.addBrotherForm.name.$invalid && vm.addBrotherSubmitted">
+		<p>Brother's full name must have alphabetical and/or whitespace characters (i.e. Darwin Arayata).</p>
 	</div>
 
-	Your review: <textarea name="review" required ng-model="vm.review"></textarea>
-	<div ng-show="vm.reviewForm.review.$dirty && vm.addBrotherSubmitted">
-		<p>Please add a review</p>
+	<p>Aka:</p>
+	<input type="text" name="aka" required ng-pattern"/^[A-Za-z\s]+$/" ng-model="vm.addBrotherData.aka">
+	<div ng-show="vm.addBrotherForm.aka.$dirty && vm.addBrotherForm.aka.$invalid && vm.addBrotherSubmitted">
+		<p>Brother's aka must have alphabetical and/or whitespace characters (i.e. Cutie Patootie).</p>
+	</div>
+	
+	<p>Class Name:</p>
+	<input type="text" name="className" required ng-pattern="/^[A-Za-z]+$/" ng-model="vm.addBrotherData.className">
+	<div ng-show="vm.addBrotherForm.className.$dirty && vm.addBrotherForm.className.$invalid && vm.addBrotherSubmitted">
+		<p>Brother's class name must have alphabetical characters (i.e. Omicron).</p>
 	</div>
 
-	<button type="submit" class="btn">Add Brother</button>
+	<p>Semester Crossed:</p>
+	<input type="text" name="crossed" required ng-pattern="/^[A-Za-z]+\s[0-9]+$/" ng-model="vm.addBrotherData.crossed">
+	<div ng-show="vm.addBrotherForm.crossed.$dirty && vm.addBrotherForm.crossed.$invalid && vm.addBrotherSubmitted">
+		<p>Brother's semester crossed must have semester followed by the year (i.e. Fall 2008)</p>
+	</div>
+
+	<p>Family:</p>
+	<input type="text" name="family" required ng-pattern="/^[A-Za-z]+$/" ng-model="vm.addBrotherData.family">
+	<div ng-show="vm.addBrotherForm.family.$dirty && vm.addBrotherForm.family.$invalid && vm.addBrotherSubmitted">
+		<p>Brother's family name must have alphabetical characters (i.e. Elite).</p>
+	</div>
+
+
+	<button type="submit" class="btn btn-primary">Add Brother</button>
 </form>
 
 <h4>Edit Brothers</h4>

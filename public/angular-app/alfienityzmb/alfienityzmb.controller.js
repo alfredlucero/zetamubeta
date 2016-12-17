@@ -4,8 +4,9 @@ function AlfienityZmbController($route, brotherDataFactory) {
 	var vm = this;
 	vm.addBrotherData = {};
 	vm.addBrother = function() {
+		console.log(vm.addBrotherData);
 		var postData = {
-			_id : vm.addBrotherData._id,
+			_id : Number(vm.addBrotherData._id),
 			name : vm.addBrotherData.name,
 			aka : vm.addBrotherData.aka,
 			className : vm.addBrotherData.className,
@@ -13,7 +14,7 @@ function AlfienityZmbController($route, brotherDataFactory) {
 			family : vm.addBrotherData.family
 		};
 
-		if (vm.addBrother.$valid) {
+		if (vm.addBrotherForm.$valid) {
 			brotherDataFactory.postBrother(postData).then(function(response) {
 				console.log(response);
 				$route.reload();
@@ -23,5 +24,6 @@ function AlfienityZmbController($route, brotherDataFactory) {
 		} else {
 			vm.addBrotherSubmitted = true;
 		}
+
 	}
 }
