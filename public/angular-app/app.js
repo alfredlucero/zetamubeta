@@ -23,8 +23,20 @@ function config($routeProvider) {
 				restricted: false
 			}
 		})
-		.when('/family', {
-			templateUrl: 'angular-app/family/family.html',
+		.when('/families', {
+			templateUrl: 'angular-app/families/families.html',
+			access: {
+				restricted: false
+			}
+		})
+		.when('/rush', {
+			templateUrl: 'angular-app/rush/rush.html',
+			access: {
+				restricted: false
+			}
+		})
+		.when('/events', {
+			templateUrl: 'angular-app/events/events.html',
 			access: {
 				restricted: false
 			}

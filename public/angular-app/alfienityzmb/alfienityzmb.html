@@ -1,1 +1,36 @@
-Hello alfienity zmb
+<h2>Alfienity ZMB</h2>
+<h3>Brothers</h3>
+<h4>Add Brother to Database</h4>
+<form name="vm.addBrotherForm" ng-submit="vm.addBrother()">		
+	Brother Number: <input type="number" name="_id" required ng-pattern="/^[1-9]+$/" ng-model="vm.addBrotherData._id">
+	<div ng-show="vm.addBrotherForm._id.$dirty && vm.addBrotherForm._id.$invalid && vm.addBrotherSubmitted">
+			<p>Number must be at least 1 or greater.</p>
+	</div>
+
+	Your review: <textarea name="review" required ng-model="vm.review"></textarea>
+	<div ng-show="vm.reviewForm.review.$dirty && vm.addBrotherSubmitted">
+		<p>Please add a review</p>
+	</div>
+
+	<button type="submit" class="btn">Add Brother</button>
+</form>
+
+<h4>Edit Brothers</h4>
+
+<h3>Families</h3>
+<!-- <h4>Add Families to Database</h4>
+<form name="vm." ng-submit="vm.addReview()">		
+	Your rating: <input type="number" name="rating" required ng-pattern="/^[1-5]$/" ng-model="vm.rating">
+	<div ng-show="vm.reviewForm.rating.$dirty && vm.reviewForm.rating.$invalid && vm.isSubmitted">
+			<p>Rating must be between 1-5.</p>
+	</div>
+
+	Your review: <textarea name="review" required ng-model="vm.review"></textarea>
+	<div ng-show="vm.reviewForm.review.$dirty && vm.isSubmitted">
+		<p>Please add a review</p>
+	</div>
+
+	<button type="submit" class="btn">Add review</button>
+</form> -->
+
+<h4>Edit Families</h4>

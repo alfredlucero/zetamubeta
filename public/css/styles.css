@@ -9,40 +9,57 @@ body {
 h1 {
 	font-size: 32px;
 	letter-spacing: 2px;
+	border-bottom: 2px #eee solid;
 }
 
 h2 {
 	font-size: 28px;
+	color: #466846;
+	border-bottom: 2px #eee solid;
 }
 
 h3 {
 	font-size: 24px;
+	border-bottom: 2px #eee solid;
 }
 
 h4 {
 	font-size: 20px;
+	border-bottom: 2px #eee solid;
 }
 
 /* unvisited link */
 a:link {
-    color: #88abc8;
-    text-decoration: none;
+  color: #88abc8;
+  text-decoration: none;
 }
 
 /* visited link */
 a:visited {
-    color: #c4eaee;
-    text-decoration: none;
+  color: #88abc8;
+  text-decoration: none;
 }
 
 /* mouse over link */
 a:hover {
-    color: #c4eaee;
-    text-decoration: none;
+  color: #c4eaee;
+  text-decoration: none;
 }
 
 /* selected link */
 a:active {
-    color: #c4eaee;
-    text-decoration: none;
+  color: #c4eaee;
+  text-decoration: none;
+}
+
+#navbar {
+	padding: 0;
+}
+
+#navbar-links {
+	list-style-type: none;
+}
+
+#navbar-links li {
+	border-left: 3px #aaa solid;
 }
