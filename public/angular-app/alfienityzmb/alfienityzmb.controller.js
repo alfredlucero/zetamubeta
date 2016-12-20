@@ -3,6 +3,11 @@ angular.module('zmbApp').controller('AlfienityZmbController', AlfienityZmbContro
 function AlfienityZmbController($route, brotherDataFactory) {
 	var vm = this;
 	vm.addBrotherData = {};
+	vm.editBrotherNumber = 1;
+	vm.editBrotherData = {};
+	vm.editBrotherDeleted = false;
+	vm.editBrotherUpdated = false;
+
 	vm.addBrother = function() {
 		console.log(vm.addBrotherData);
 		var postData = {
@@ -25,5 +30,42 @@ function AlfienityZmbController($route, brotherDataFactory) {
 			vm.addBrotherSubmitted = true;
 		}
 
+	};
+
+	vm.displayBrother = function() {
+		brotherDataFactory.brotherDisplay(vm.editBrotherNumber).then(function(response) {
+			vm.editBrotherData = response;
+		});
 	}
+
+	vm.deleteBrother = function() {
+		brotherDataFactory.deleteBrother(vm.editBrotherNumber).then(function(response) {
+			vm.editBrotherData = response;
+			console.log(response);
+
+			vm.editBrotherDeleted = true;
+		}).catch(function(error) {
+			console.log(error);
+			vm.editBrotherDeleted = false;
+		});
+	};
+
+	vm.updateBrother = function() {
+		var putData = {
+			_id : Number(vm.editBrotherData._id),
+			name : vm.editBrotherData.name,
+			aka : vm.editBrotherData.aka,
+			className : vm.editBrotherData.className,
+			crossed : vm.editBrotherData.crossed,
+			family : vm.editBrotherData.family
+		};
+		brotherDataFactory.updateBrother(putData._id, putData).then(function(response) {
+			vm.editBrotherData = response;
+
+			vm.editBrotherUpdated = true;
+		}).catch(function(error) {
+			console.log(error);
+			vm.editBrotherUpdated = false;
+		});
+	};
 }

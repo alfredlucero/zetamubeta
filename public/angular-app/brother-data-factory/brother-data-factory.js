@@ -4,7 +4,9 @@ function brotherDataFactory($http) {
 	return {
 		brothersList: brothersList,
 		brotherDisplay: brotherDisplay,
-		postBrother: postBrother
+		postBrother: postBrother,
+		deleteBrother: deleteBrother,
+		updateBrother: updateBrother
 	};
 
 	function brothersList() {
@@ -17,6 +19,14 @@ function brotherDataFactory($http) {
 
 	function postBrother(brother) {
 		return $http.post('/api/brothers', brother).then(complete).catch(failed);
+	}
+
+	function updateBrother(id, brother) {
+		return $http.put('/api/brothers/' + id, brother).then(complete).catch(failed);
+	}
+
+	function deleteBrother(id) {
+		return $http.delete('/api/brothers/' + id).then(complete).catch(failed);
 	}
 
 	function complete(response) {

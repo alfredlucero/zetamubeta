@@ -75,12 +75,16 @@ module.exports.brothersUpdateOne = function(req, res) {
 					.status(response.status)
 					.json(response.message);
 			} else {
+				console.log(req.body);
+				brother._id = req.body._id;
 				brother.name = req.body.name;
 				brother.number = req.body.number;
 				brother.aka = req.body.aka;
 				brother.className = req.body.className;
 				brother.crossed = req.body.crossed;
 				brother.family = req.body.family;
+
+				console.log(brother);
 
 				brother.save(function(err, brotherUpdated) {
 					if (err) {

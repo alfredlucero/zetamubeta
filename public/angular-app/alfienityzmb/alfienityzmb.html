@@ -43,6 +43,56 @@
 </form>
 
 <h4>Edit Brothers</h4>
+<form name="vm.editBrotherNumberForm" ng-submit="vm.displayBrother()">	
+	<p>Search for brother by number to edit:</p>
+	<input type="number" name="editBrotherNumber" ng-model="vm.editBrotherNumber">
+	<button type="submit" class="btn btn-primary">Edit Brother Number {{ vm.editBrotherNumber }}</button>
+</form>
+<p>
+	{{ vm.editBrotherData._id }}. {{ vm.editBrotherData.name }} aka {{ vm.editBrotherData.aka }} | {{ vm.editBrotherData.family }} Fam | {{ vm.editBrotherData.className }} - {{ vm.editBrotherData.crossed }}
+</p>
+<form name="vm.editBrotherForm" ng-submit="vm.updateBrother()">
+	<p>Line Number:</p>
+	<input type="number" name="_id" required ng-pattern="/^[0-9]+$/" ng-model="vm.editBrotherData._id">
+	<div ng-show="vm.editBrotherForm._id.$dirty && vm.editBrotherForm._id.$invalid && vm.editBrotherSubmitted">
+			<p>Line number must be integer number (i.e. 10).</p>
+	</div>
+	
+	<p>Name:</p>
+	<input type="text" name="name" required ng-pattern="/^[A-Za-z\s]+$/" ng-model="vm.editBrotherData.name">
+	<div ng-show="vm.editBrotherForm.name.$dirty && vm.editBrotherForm.name.$invalid && vm.editBrotherSubmitted">
+		<p>Brother's full name must have alphabetical and/or whitespace characters (i.e. Darwin Arayata).</p>
+	</div>
+
+	<p>Aka:</p>
+	<input type="text" name="aka" required ng-pattern"/^[A-Za-z\s]+$/" ng-model="vm.editBrotherData.aka">
+	<div ng-show="vm.editBrotherForm.aka.$dirty && vm.editBrotherForm.aka.$invalid && vm.editBrotherSubmitted">
+		<p>Brother's aka must have alphabetical and/or whitespace characters (i.e. Cutie Patootie).</p>
+	</div>
+	
+	<p>Class Name:</p>
+	<input type="text" name="className" required ng-pattern="/^[A-Za-z]+$/" ng-model="vm.editBrotherData.className">
+	<div ng-show="vm.editBrotherForm.className.$dirty && vm.editBrotherForm.className.$invalid && vm.editBrotherSubmitted">
+		<p>Brother's class name must have alphabetical characters (i.e. Omicron).</p>
+	</div>
+
+	<p>Semester Crossed:</p>
+	<input type="text" name="crossed" required ng-pattern="/^[A-Za-z]+\s[0-9]+$/" ng-model="vm.editBrotherData.crossed">
+	<div ng-show="vm.editBrotherForm.crossed.$dirty && vm.editBrotherForm.crossed.$invalid && vm.editBrotherSubmitted">
+		<p>Brother's semester crossed must have semester followed by the year (i.e. Fall 2008)</p>
+	</div>
+
+	<p>Family:</p>
+	<input type="text" name="family" required ng-pattern="/^[A-Za-z]+$/" ng-model="vm.editBrotherData.family">
+	<div ng-show="vm.editBrotherForm.family.$dirty && vm.editBrotherForm.family.$invalid && vm.editBrotherSubmitted">
+		<p>Brother's family name must have alphabetical characters (i.e. Elite).</p>
+	</div>
+	<button type="submit" class="btn col-xs-6">Edit</button>
+</form>
+	<button type="button" class="btn col-xs-6"  ng-click="vm.deleteBrother()">Delete</button>
+	<p ng-show="vm.editBrotherUpdated">Brother {{ vm.editBrotherNumber }} updated</p>
+	<p ng-show="vm.editBrotherDeleted">Brother {{ vm.editBrotherNumber }} deleted</p>
+
 
 <h3>Families</h3>
 <!-- <h4>Add Families to Database</h4>
