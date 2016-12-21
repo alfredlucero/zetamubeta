@@ -1,10 +1,57 @@
-<h2>Zion's Mightiest Brothers</h2>
-<h3>Executive Board</h3>
-<h3>Board</h3>
-<h3>Actives 2016-2017</h3>
-<h3>Brothers</h3>
-<p>Filter by: </p>
-<input type="text" placeholder="filter by id, name, aka, family, className, etc." ng-model="vm.filterBrothers">
-<p ng-repeat="brother in vm.brothers | orderBy: '_id' | filter: vm.filterBrothers">
-	{{ brother._id }}. {{ brother.name }} aka {{ brother.aka }} | {{ brother.family }} Fam | {{ brother.className }} - {{ brother.crossed }}
-</p>
+<div class="row">
+	<h2>Zion's Mightiest Brothers</h2>
+	<h3>Executive Board</h3>
+	<h4>President: <small>Jeremy Basuga</small></h4>
+	<h4>Vice President: <small>Alvin Delito</small></h4>
+	<h4>Treasurer: <small>John Saluta</small></h4>
+	<h4>Secretary: <small>Derrick Harding</small></h4>
+	<h3>Board</h3>
+	<h4>Social Chair: <small>Chris John Deroca</small></h4>
+	<h4>Philanthropy Chair: <small>Jeffrey Dang</small></h4>
+	<h4>Fundraising Chair: <small>Derek Do</small></h4>
+	<h4>Academic Chair: <small>Patrick Monta</small></h4>
+	<h4>Cultural Chair: <small>Peter Hor</small></h4>
+	<h4>Rush Chairs: <small>Chris Quirong and Chris John Deroca</small></h4>
+	<h4>Historians: <small>Matthew Yan and Edgar Rayos Del Sol Jr.</small></h4>
+	<h4>Queen's Chair: <small>Jeff Yee and Alvin Delito</small></h4>
+	<h4>CGC Liaison: <small>Kenny Phin</small></h4>
+	<h4>Brotherhood Chair: <small>Matthew Yan</small></h4>
+	<h3>Actives 2016-2017</h3>
+	<ul class="col-xs-12">
+		<li class="col-xs-12 col-md-6">Aaron Yabut</li>
+		<li class="col-xs-12 col-md-6">Alexander John Cainglet</li>
+		<li class="col-xs-12 col-md-6">Alfred Lucero</li>
+		<li class="col-xs-12 col-md-6">Alvin Delito</li>
+		<li class="col-xs-12 col-md-6">Anthony Estalilla</li>
+		<li class="col-xs-12 col-md-6">Brian Pham</li>
+		<li class="col-xs-12 col-md-6">Chris John Deroca</li>
+		<li class="col-xs-12 col-md-6">Chris Quirong</li>
+		<li class="col-xs-12 col-md-6">Derek Do</li>
+		<li class="col-xs-12 col-md-6">Derrick Harding</li>
+		<li class="col-xs-12 col-md-6">Edgar Rayos Del Sol Jr.</li>
+		<li class="col-xs-12 col-md-6">Emil Evangelista</li>
+		<li class="col-xs-12 col-md-6">Gereme Viray</li>
+		<li class="col-xs-12 col-md-6">Jimmy Pham</li>
+		<li class="col-xs-12 col-md-6">Jeff Yee</li>
+		<li class="col-xs-12 col-md-6">Jeffrey Dang</li>
+		<li class="col-xs-12 col-md-6">Jeremy Basuga</li>
+		<li class="col-xs-12 col-md-6">John Saluta</li>
+		<li class="col-xs-12 col-md-6">John Paul Rigonan</li>
+		<li class="col-xs-12 col-md-6">Julanda Al Mohd</li>
+		<li class="col-xs-12 col-md-6">Kenny Phin</li>
+		<li class="col-xs-12 col-md-6">Matthew Yan</li>
+		<li class="col-xs-12 col-md-6">Niguel Cher</li>
+		<li class="col-xs-12 col-md-6">Patrick Ferdinand Monta</li>
+		<li class="col-xs-12 col-md-6">Patrick Vitug</li>
+		<li class="col-xs-12 col-md-6">Peter Hor</li>
+		<li class="col-xs-12 col-md-6">Phillip Chu</li>
+		<li class="col-xs-12 col-md-6">Victor Angeles</li>
+		<li class="col-xs-12 col-md-6">Vincent Nguyen</li>
+	</ul>
+	<h3>Brothers</h3>
+	<p>Filter by: </p>
+	<input type="text" placeholder="filter by id, name, aka, family, className, etc." ng-model="vm.filterBrothers" class="col-xs-12">
+	<p ng-repeat="brother in vm.brothers | orderBy: '_id' | filter: vm.filterBrothers">
+		{{ brother._id }}. {{ brother.name }} aka {{ brother.aka }} | {{ brother.family }} Fam | {{ brother.className }} - {{ brother.crossed }}
+	</p>
+</div>
