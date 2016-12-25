@@ -1,0 +1,802 @@
+[{
+    "_id": 1,
+    "name": "Darwin Arayata",
+    "aka": "Chief",
+    "className": "Founding",
+    "crossed": "Fall 2008",
+    "family": "Flash"
+},
+{
+    "_id": 2,
+    "name": "Jibram Martinez",
+    "aka": "Diesel",
+    "className": "Founding",
+    "crossed": "Fall 2008",
+    "family": "Mighty"
+},
+{
+    "_id": 3,
+    "name": "NA",
+    "aka": "NA",
+    "className": "Founding",
+    "crossed": "Fall 2008",
+    "family": "Elite"
+},
+{
+    "_id": 4,
+    "name": "Stephen Le",
+    "aka": "Whiz",
+    "className": "Founding",
+    "crossed": "Fall 2008",
+    "family": "Aro"
+},
+{
+    "_id": 5,
+    "name": "Ferdinand Lucero Jr.",
+    "aka": "Kapono",
+    "className": "Founding",
+    "crossed": "Fall 2008",
+    "family": "Flight"
+},
+{
+    "_id": 6,
+    "name": "Patrick Molina",
+    "aka": "Hollywood",
+    "className": "Founding",
+    "crossed": "Fall 2008",
+    "family": "Butterfly"
+},
+{
+    "_id": 7,
+    "name": "Eric Margallo",
+    "aka": "Eroc",
+    "className": "Founding",
+    "crossed": "Fall 2008",
+    "family": "Flossy"
+},
+{
+    "_id": 8,
+    "name": "Linh Tran",
+    "aka": "X",
+    "className": "Founding",
+    "crossed": "Fall 2008",
+    "family": "Fiesta"
+},
+{
+    "_id": 9,
+    "name": "Christopher Raymond Pettigrew",
+    "aka": "Torpedo",
+    "className": "Alpha",
+    "crossed": "Spring 2009",
+    "family": "Flash"
+},
+{
+    "_id": 10,
+    "name": "Gerard del Rosario",
+    "aka": "Boy B",
+    "className": "Alpha",
+    "crossed": "Spring 2009",
+    "family": "Elite"
+},
+{
+    "_id": 11,
+    "name": "Jairus O'Lawrence",
+    "aka": "Slim",
+    "className": "Alpha",
+    "crossed": "Spring 2009",
+    "family": "Aro"
+},
+{
+    "_id": 12,
+    "name": "Efrain Franco",
+    "aka": "Evo",
+    "className": "Alpha",
+    "crossed": "Spring 2009",
+    "family": "Elite"
+},
+{
+    "_id": 13,
+    "name": "Jonathan Kom",
+    "aka": "Kay-Oh",
+    "className": "Beta",
+    "crossed": "Fall 2009",
+    "family": "Mighty"
+},
+{
+    "_id": 14,
+    "name": "Dale Tallo",
+    "aka": "Moose",
+    "className": "Beta",
+    "crossed": "Fall 2009",
+    "family": "Fiesta"
+},
+{
+    "_id": 15,
+    "name": "Diego Del Campo",
+    "aka": "Legend",
+    "className": "Beta",
+    "crossed": "Fall 2009",
+    "family": "Flight"
+},
+{
+    "_id": 16,
+    "name": "Arturo Acuna",
+    "aka": "Clipse",
+    "className": "Beta",
+    "crossed": "Fall 2009",
+    "family": "Aro"
+},
+{
+    "_id": 17,
+    "name": "Marvin Peredo",
+    "aka": "Romeo",
+    "className": "Beta",
+    "crossed": "Fall 2009",
+    "family": "Butterfly"
+},
+{
+    "_id": 18,
+    "name": "Dennis Tran",
+    "aka": "Megatran",
+    "className": "Gamma",
+    "crossed": "Spring 2010",
+    "family": "Flash"
+},
+{
+    "_id": 19,
+    "name": "Richard Cajigal",
+    "aka": "Reptar",
+    "className": "Gamma",
+    "crossed": "Spring 2010",
+    "family": "Flossy"
+},
+{
+    "_id": 20,
+    "name": "Joel Barcelon",
+    "aka": "Santana",
+    "className": "Delta",
+    "crossed": "Fall 2010",
+    "family": "Aro"
+},
+{
+    "_id": 21,
+    "name": "Derek Yi",
+    "aka": "Prodigy",
+    "className": "Delta",
+    "crossed": "Fall 2010",
+    "family": "Flight"
+},
+{
+    "_id": 22,
+    "name": "Daryl Paz",
+    "aka": "Digby",
+    "className": "Delta",
+    "crossed": "Fall 2010",
+    "family": "Butterfly"
+},
+{
+    "_id": 23,
+    "name": "Michael Mendoza",
+    "aka": "Colossus",
+    "className": "Epsilon",
+    "crossed": "Spring 2011",
+    "family": "Flash"
+},
+{
+    "_id": 24,
+    "name": "Mark Thomas Labrador Carmona",
+    "aka": "ShuffleZ",
+    "className": "Epsilon",
+    "crossed": "Spring 2011",
+    "family": "Elite"
+},
+{
+    "_id": 25,
+    "name": "Gerald Poblete",
+    "aka": "Dopey",
+    "className": "Epsilon",
+    "crossed": "Spring 2011",
+    "family": "Flash"
+},
+{
+    "_id": 26,
+    "name": "Brian Columna",
+    "aka": "Long Hair Don't Care",
+    "className": "Epsilon",
+    "crossed": "Spring 2011",
+    "family": "Flossy"
+},
+{
+    "_id": 27,
+    "name": "Gavin Thomas Gordon Topper",
+    "aka": "Frost",
+    "className": "Epsilon",
+    "crossed": "Spring 2011",
+    "family": "Flight"
+},
+{
+    "_id": 28,
+    "name": "Michael Quiros",
+    "aka": "Stiffy",
+    "className": "Zeta",
+    "crossed": "Fall 2011",
+    "family": "Flight"
+},
+{
+    "_id": 29,
+    "name": "Mark Marroquin",
+    "aka": "Waldo",
+    "className": "Zeta",
+    "crossed": "Fall 2011",
+    "family": "Butterfly"
+},
+{
+    "_id": 30,
+    "name": "Gerome Viray",
+    "aka": "Cutie Patootie",
+    "className": "Zeta",
+    "crossed": "Fall 2011",
+    "family": "Flash"
+},
+{
+    "_id": 31,
+    "name": "Peter Cheng",
+    "aka": "Petrachellie",
+    "className": "Zeta",
+    "crossed": "Fall 2011",
+    "family": "Butterfly"
+},
+{
+    "_id": 32,
+    "name": "Eric Azpeitia",
+    "aka": "Charizard",
+    "className": "Zeta",
+    "crossed": "Fall 2011",
+    "family": "Elite"
+},
+{
+    "_id": 33,
+    "name": "NA",
+    "aka": "NA",
+    "className": "Eta",
+    "crossed": "Spring 2012",
+    "family": "Elite"
+},
+{
+    "_id": 34,
+    "name": "Kameron Anderson",
+    "aka": "Playboy",
+    "className": "Eta",
+    "crossed": "Spring 2012",
+    "family": "Flash"
+},
+{
+    "_id": 35,
+    "name": "Joseph Aquino",
+    "aka": "Jazz",
+    "className": "Eta",
+    "crossed": "Spring 2012",
+    "family": "Fiesta"
+},
+{
+    "_id": 36,
+    "name": "Irwinn Garcia",
+    "aka": "Armor",
+    "className": "Eta",
+    "crossed": "Spring 2012",
+    "family": "Flight"
+},
+{
+    "_id": 37,
+    "name": "Darvell Valentine",
+    "aka": "Firepower",
+    "className": "Eta",
+    "crossed": "Spring 2012",
+    "family": "Mighty"
+},
+{
+    "_id": 38,
+    "name": "Daniel Tran",
+    "aka": "Galvatran",
+    "className": "Eta",
+    "crossed": "Spring 2012",
+    "family": "Flossy"
+},
+{
+    "_id": 39,
+    "name": "Zhamir Pascual",
+    "aka": "Turbo",
+    "className": "Theta",
+    "crossed": "Fall 2012",
+    "family": "Mighty"
+},
+{
+    "_id": 39,
+    "name": "Zhamir Pascual",
+    "aka": "Turbo",
+    "className": "Theta",
+    "crossed": "Fall 2012",
+    "family": "Mighty"
+},
+{
+    "_id": 40,
+    "name": "Emmanuel Concepcion",
+    "aka": "M&M",
+    "className": "Theta",
+    "crossed": "Fall 2012",
+    "family": "Elite"
+},
+{
+    "_id": 41,
+    "name": "Jason Tallo",
+    "aka": "Flip",
+    "className": "Theta",
+    "crossed": "Fall 2012",
+    "family": "Aro"
+},
+{
+    "_id": 42,
+    "name": "Michael Nguyen",
+    "aka": "Monk",
+    "className": "Theta",
+    "crossed": "Fall 2012",
+    "family": "Fiesta"
+},
+{
+    "_id": 43,
+    "name": "Mathew Vincent",
+    "aka": "Ghost",
+    "className": "Iota",
+    "crossed": "Spring 2013",
+    "family": "Butterfly"
+},
+{
+    "_id": 44,
+    "name": "Brandon Abrajan",
+    "aka": "Pegasus",
+    "className": "Iota",
+    "crossed": "Spring 2013",
+    "family": "Flight"
+},
+{
+    "_id": 45,
+    "name": "Joel Morales",
+    "aka": "Gizmo",
+    "className": "Iota",
+    "crossed": "Spring 2013",
+    "family": "Elite"
+},
+{
+    "_id": 46,
+    "name": "Ronnel Vincent Valenzuela",
+    "aka": "Urkel",
+    "className": "Iota",
+    "crossed": "Spring 2013",
+    "family": "Flash"
+},
+{
+    "_id": 47,
+    "name": "NA",
+    "aka": "NA",
+    "className": "Iota",
+    "crossed": "Spring 2013",
+    "family": "Butterfly"
+},
+{
+    "_id": 48,
+    "name": "Phillip Yoo",
+    "aka": "Judo",
+    "className": "Iota",
+    "crossed": "Spring 2013",
+    "family": "Flossy"
+},
+{
+    "_id": 49,
+    "name": "Justin Javillonar",
+    "aka": "Juicy J",
+    "className": "Kappa",
+    "crossed": "Fall 2013",
+    "family": "Aro"
+},
+{
+    "_id": 50,
+    "name": "Edgar Rayos Del Sol Jr.",
+    "aka": "Super 8",
+    "className": "Kappa",
+    "crossed": "Fall 2013",
+    "family": "Aro"
+},
+{
+    "_id": 51,
+    "name": "Jasper Javier",
+    "aka": "R2D2",
+    "className": "Kappa",
+    "crossed": "Fall 2013",
+    "family": "Butterfly"
+},
+{
+    "_id": 52,
+    "name": "Jeremy Basuga",
+    "aka": "Kinja",
+    "className": "Lambda",
+    "crossed": "Spring 2014",
+    "family": "Elite"
+},
+{
+    "_id": 53,
+    "name": "Sam Wang",
+    "aka": "Solarbeam",
+    "className": "Lambda",
+    "crossed": "Spring 2014",
+    "family": "Flossy"
+},
+{
+    "_id": 54,
+    "name": "Jeancarlos Javier Morataya",
+    "aka": "Virtuoso",
+    "className": "Lambda",
+    "crossed": "Spring 2014",
+    "family": "Butterfly"
+},
+{
+    "_id": 55,
+    "name": "Matthew Mata",
+    "aka": "Icarus",
+    "className": "Lambda",
+    "crossed": "Spring 2014",
+    "family": "Flight"
+},
+{
+    "_id": 56,
+    "name": "Christian Gumacal",
+    "aka": "Primetime",
+    "className": "Lambda",
+    "crossed": "Spring 2014",
+    "family": "Mighty"
+},
+{
+    "_id": 57,
+    "name": "Brandon Tran",
+    "aka": "G-Dragon",
+    "className": "Lambda",
+    "crossed": "Spring 2014",
+    "family": "Aro"
+},
+{
+    "_id": 58,
+    "name": "Mark Onyx Deroca",
+    "aka": "Steelix",
+    "className": "Mu",
+    "crossed": "Fall 2014",
+    "family": "Elite"
+},
+{
+    "_id": 58,
+    "name": "Mark Onyx Deroca",
+    "aka": "Steelix",
+    "className": "Mu",
+    "crossed": "Fall 2014",
+    "family": "Elite"
+},
+
+{
+    "_id": 59,
+    "name": "Alfred Lucero",
+    "aka": "Flux",
+    "className": "Mu",
+    "crossed": "Fall 2014",
+    "family": "Elite"
+},
+{
+    "_id": 60,
+    "name": "John Paul Rigonan",
+    "aka": "Hotshot",
+    "className": "Mu",
+    "crossed": "Fall 2014",
+    "family": "Fiesta"
+},
+{
+    "_id": 61,
+    "name": "John Saluta",
+    "aka": "Grinder",
+    "className": "Mu",
+    "crossed": "Fall 2014",
+    "family": "Elite"
+},
+{
+    "_id": 62,
+    "name": "Michael Ramillano",
+    "aka": "Incognito",
+    "className": "Mu",
+    "crossed": "Fall 2014",
+    "family": "Flossy"
+},
+{
+    "_id": 63,
+    "name": "Derrick Harding",
+    "aka": "A$AP",
+    "className": "Mu",
+    "crossed": "Fall 2014",
+    "family": "Aro"
+},
+{
+    "_id": 64,
+    "name": "Alexander John Cainglet",
+    "aka": "Tax",
+    "className": "Mu",
+    "crossed": "Fall 2014",
+    "family": "Flash"
+},
+{
+    "_id": 65,
+    "name": "Matthew Gozzip",
+    "aka": "King",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Mighty"
+},
+{
+    "_id": 66,
+    "name": "Kenny Phin",
+    "aka": "Rumble",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Elite"
+},
+{
+    "_id": 67,
+    "name": "Brian Tan",
+    "aka": "Olympus",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Flight"
+},
+{
+    "_id": 68,
+    "name": "Alvin Delito",
+    "aka": "X. Caliber",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Mighty"
+},
+{
+    "_id": 69,
+    "name": "Michael Vo",
+    "aka": "Jiraiya",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Flight"
+},
+{
+    "_id": 70,
+    "name": "Chris Quirong",
+    "aka": "Anchor",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Flossy"
+},
+{
+    "_id": 71,
+    "name": "Julanda Al Mohd",
+    "aka": "Joker",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Elite"
+},
+{
+    "_id": 72,
+    "name": "Vincent Nguyen",
+    "aka": "Ye",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Fiesta"
+},
+{
+    "_id": 73,
+    "name": "Jeff Yee",
+    "aka": "Stitch",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Butterfly"
+},
+{
+    "_id": 74,
+    "name": "RV Austria",
+    "aka": "Sylvester",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Flash"
+},
+{
+    "_id": 75,
+    "name": "Anthony Chang",
+    "aka": "Bangarang",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Fiesta"
+},
+{
+    "_id": 76,
+    "name": "Emil Josef Ang Evangelista",
+    "aka": "Jollibee",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Elite"
+},
+{
+    "_id": 77,
+    "name": "Gereme Viray",
+    "aka": "Crossover",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Flash"
+},
+{
+    "_id": 78,
+    "name": "Phillip Chu",
+    "aka": "Mack Daddy",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Flash"
+},
+{
+    "_id": 79,
+    "name": "Brian Om",
+    "aka": "Lil B",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Aro"
+},
+{
+    "_id": 80,
+    "name": "Derek Do",
+    "aka": "Zazu",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Butterfly"
+},
+{
+    "_id": 81,
+    "name": "Jonkey Contada",
+    "aka": "Aipom",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Elite"
+},
+{
+    "_id": 82,
+    "name": "Austin Duran",
+    "aka": "Dumbfoundead",
+    "className": "Nu",
+    "crossed": "Spring 2015",
+    "family": "Aro"
+},
+{
+    "_id": 83,
+    "name": "Chris John Deroca",
+    "aka": "Bumi",
+    "className": "Xi",
+    "crossed": "Fall 2015",
+    "family": "Elite"
+},
+{
+    "_id": 84,
+    "name": "Matthew Yan",
+    "aka": "D-Trix",
+    "className": "Xi",
+    "crossed": "Fall 2015",
+    "family": "Fiesta"
+},
+{
+    "_id": 85,
+    "name": "Jonas Angeles Juniga Armas",
+    "aka": "Lil Crazed",
+    "className": "Xi",
+    "crossed": "Fall 2015",
+    "family": "Aro"
+},
+{
+    "_id": 86,
+    "name": "Peter Hor",
+    "aka": "Bunny",
+    "className": "Xi",
+    "crossed": "Fall 2015",
+    "family": "Flossy"
+},
+{
+    "_id": 87,
+    "name": "Patrick Ferdinand Monta",
+    "aka": "Apollo",
+    "className": "Xi",
+    "crossed": "Fall 2015",
+    "family": "Butterfly"
+},
+{
+    "_id": 88,
+    "name": "Victor Angeles",
+    "aka": "Narukami",
+    "className": "Omicron",
+    "crossed": "Spring 2016",
+    "family": "Elite"
+},
+{
+    "_id": 89,
+    "name": "Anthony Estalilla",
+    "aka": "Chance",
+    "className": "Omicron",
+    "crossed": "Spring 2016",
+    "family": "Aro"
+},
+{
+    "_id": 90,
+    "name": "Jimmy Pham",
+    "aka": "Gir",
+    "className": "Omicron",
+    "crossed": "Spring 2016",
+    "family": "Mighty"
+},
+{
+    "_id": 91,
+    "name": "Jeffrey Dang",
+    "aka": "Clutch",
+    "className": "Omicron",
+    "crossed": "Spring 2016",
+    "family": "Elite"
+},
+{
+    "_id": 92,
+    "name": "Brian Pham",
+    "aka": "Aladdin",
+    "className": "Omicron",
+    "crossed": "Spring 2016",
+    "family": "Flash"
+},
+{
+    "_id": 93,
+    "name": "Aaron Yabut",
+    "aka": "Kanye",
+    "className": "Omicron",
+    "crossed": "Spring 2016",
+    "family": "Flight"
+},
+{
+    "_id": 94,
+    "name": "Niguel Cher",
+    "aka": "Uy",
+    "className": "Omicron",
+    "crossed": "Spring 2016",
+    "family": "Butterfly"
+},
+{
+    "_id": 95,
+    "name": "Patrick Vitug",
+    "aka": "Happy Feet",
+    "className": "Omicron",
+    "crossed": "Spring 2016",
+    "family": "Flash"
+},
+{
+    "_id": 96,
+    "name": "Eric Nguyen",
+    "aka": "Notorious",
+    "className": "Pi",
+    "crossed": "Fall 2016",
+    "family": "Flash"
+},
+{
+    "_id": 97,
+    "name": "Clapton Nguyen",
+    "aka": "Iroh",
+    "className": "Pi",
+    "crossed": "Fall 2016",
+    "family": "Elite"
+},
+{
+    "_id": 98,
+    "name": "Muath Almanthri",
+    "aka": "Daredevil",
+    "className": "Pi",
+    "crossed": "Fall 2016",
+    "family": "Fiesta"
+}
+]

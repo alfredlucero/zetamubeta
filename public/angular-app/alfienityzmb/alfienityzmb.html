@@ -9,13 +9,13 @@
 	</div>
 	
 	<p>Name:</p>
-	<input type="text" name="name" required ng-pattern="/^[A-Za-z\s]+$/" ng-model="vm.addBrotherData.name">
+	<input type="text" name="name" required ng-pattern="/^[A-Za-z\s.\-'&]+$/" ng-model="vm.addBrotherData.name">
 	<div ng-show="vm.addBrotherForm.name.$dirty && vm.addBrotherForm.name.$invalid && vm.addBrotherSubmitted">
 		<p>Brother's full name must have alphabetical and/or whitespace characters (i.e. Darwin Arayata).</p>
 	</div>
 
 	<p>Aka:</p>
-	<input type="text" name="aka" required ng-pattern"/^[A-Za-z\s]+$/" ng-model="vm.addBrotherData.aka">
+	<input type="text" name="aka" required ng-pattern"/^[A-Za-z\s.'&0-9\-\$]+$/" ng-model="vm.addBrotherData.aka">
 	<div ng-show="vm.addBrotherForm.aka.$dirty && vm.addBrotherForm.aka.$invalid && vm.addBrotherSubmitted">
 		<p>Brother's aka must have alphabetical and/or whitespace characters (i.e. Cutie Patootie).</p>
 	</div>
