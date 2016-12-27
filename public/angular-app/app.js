@@ -25,6 +25,8 @@ function config($routeProvider) {
 		})
 		.when('/families', {
 			templateUrl: 'angular-app/families/families.html',
+			controller: FamiliesController,
+			controllerAs: 'vm',
 			access: {
 				restricted: false
 			}
