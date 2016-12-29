@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./api/routes');
 
-app.set('port', 3000); // Set the port
+app.set('port', (process.env.PORT || 3000)); // Set the port
 
 // Logging middleware
 app.use(function(req, res, next) {

@@ -1,0 +1,8 @@
+{
+  "name": "Zeta Mu Beta",
+  "description": "MEAN web app for the Zeta Mu Beta Long Beach",
+  "repository": "https://github.com/alfredlucero/zetamubeta",
+  "logo": "https://www.facebook.com/278164429332/photos/a.442657394332.240597.278164429332/10152599745894333/?type=1&theater",
+  "keywords": ["zmb", "zetamubeta", "alfienitylucero", "node", "express", "angular", "MEAN", "mongodb", "REST", "API"],
+  "addons": ["mongolab"]
+}
