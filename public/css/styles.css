@@ -80,6 +80,15 @@ a:active {
 	border-top: 2px #ddd solid;
 }
 
+#family-tree-nav {
+	padding: 0;
+}
+
+.family-tree-nav-tab {
+	padding: 0;
+	margin-left: 0 !important;
+}
+
 .node {
       cursor: pointer;
     }
