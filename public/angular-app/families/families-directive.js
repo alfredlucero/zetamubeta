@@ -22,7 +22,7 @@ function familiesVisualizations() {
       	// Set familyTree data to newly updated value
       	var familyTree = newValue;
    
-		    var margin = { top: 20, right: 20, bottom: 20, left: 20 },
+		    var margin = { top: 50, right: 20, bottom: 20, left: 20 },
 		        width = 960 - margin.right - margin.left,
 		        height = 800 - margin.top - margin.bottom;
 		    var i = 0,duration = 750,root,select2_data;
@@ -35,7 +35,8 @@ function familiesVisualizations() {
 
 		    // Remove the old family tree if present
 		   	d3.select('.family-tree').remove();
-		    var svg = d3.select(el[0]).append("svg")
+		    var svg = d3.select(el[0])
+		    		.append('svg')
 		    		.attr("class", "family-tree")
 		        .attr("width", width + margin.right + margin.left)
 		        .attr("height", height + margin.top + margin.bottom)
@@ -60,7 +61,7 @@ function familiesVisualizations() {
 		    root.y0 = 0;
 		    update(root);
 
-		    d3.select(self.frameElement).style("height", "1280px");
+		    d3.select(self.frameElement).style("height", "2000px");
 
     		function update(source) {
 	        // Compute the new tree layout.
@@ -85,10 +86,11 @@ function familiesVisualizations() {
 	        .style("fill", function (d) { return d._children ? "lightsteelblue" : "#fff"; });
 
 	        nodeEnter.append("text")
-	            .attr("x", function (d) { return d.children || d._children ? -10 : 10; })
+	            .attr("y", function (d) { return d.children || d._children ? -20 : 20; })
 	            .attr("dy", ".35em")
-	            .attr("text-anchor", function (d) { return d.children || d._children ? "end" : "start"; })
-	            .text(function (d) { return d.name; })
+	            .attr("text-anchor", "middle")
+	            .text(function (d) { return d.name.split(' ')[0]; })
+	            .style('fill', function(d) { return d.type === "brother" ? '#595959'	: '#466846'; })
 	            .style("fill-opacity", 1e-6);
 
 	        // Transition nodes to their new position.
@@ -97,23 +99,16 @@ function familiesVisualizations() {
 	            .attr("transform", function (d) { return "translate(" + d.x + "," + d.y + ")"; });
 
 	        nodeUpdate.select("circle")
-	            .attr("r", 4.5)
+	            .attr("r", 10)
 	            .style("fill", function (d) {
-	                if (d.class === "found") {
-	                    return "#ff4136"; //red
-	                }
-	                else if (d._children) {
+	              	if (d._children) {
 	                    return "lightsteelblue";
 	                }
 	                else {
 	                    return "#fff";
 	                }
 	            })
-	            .style("stroke", function (d) {
-	                if (d.class === "found") {
-	                    return "#ff4136"; //red
-	                }
-	            });
+	            .style("stroke", function (d) { return d.type === "brother" ? '#595959'	: '#466846'; });
 
 	        nodeUpdate.select("text")
 	            .style("fill-opacity", 1);
@@ -130,7 +125,7 @@ function familiesVisualizations() {
 	        nodeExit.select("text")
 	            .style("fill-opacity", 1e-6);
 
-	        // Update the linksâ€¦
+	        // Update the links
 	        var link = svg.selectAll("path.link")
 	            .data(links, function (d) { return d.target.id; });
 
@@ -146,11 +141,7 @@ function familiesVisualizations() {
 	        link.transition()
 	            .duration(duration)
 	            .attr("d", diagonal)
-	            .style("stroke", function (d) {
-	                if (d.target.class === "found") {
-	                    return "#ff4136";
-	                }
-	            });
+	            .style("stroke", function (d) { return d.target.type === "brother" ? '#cee0ce' : '#ddd'; });
 
 	        // Transition exiting nodes to the parent's new position.
 	        link.exit().transition()

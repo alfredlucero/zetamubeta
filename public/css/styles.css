@@ -80,6 +80,12 @@ a:active {
 	border-top: 2px #ddd solid;
 }
 
+#family-tree-wrapper {
+	width: 100%;
+	height: 100%;
+	overflow-x: scroll;
+}
+
 #family-tree-nav {
 	padding: 0;
 }
@@ -90,26 +96,23 @@ a:active {
 }
 
 .node {
-      cursor: pointer;
-    }
+  cursor: pointer;
+}
     
 .node circle {
   fill: #fff;
   stroke: steelblue;
-  stroke-width: 1.5px;
-}
-
-.found {
-  fill: #ff4136;
-  stroke: #ff4136;
+  stroke-width: 2px;
 }
 
 .node text {
-  font: 10px sans-serif;
+  font-size: 15px;
+  font-family: 'Arvo', serif;
 }
 
 .link {
   fill: none;
-  stroke: #ccc;
-  stroke-width: 1.5px;
+  stroke: #ddd;
+  stroke-width: 5px;
 }
+
