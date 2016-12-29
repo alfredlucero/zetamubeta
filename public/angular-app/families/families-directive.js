@@ -23,10 +23,9 @@ function familiesVisualizations() {
       	var familyTree = newValue;
    
 		    var margin = { top: 50, right: 20, bottom: 20, left: 20 },
-		        width = 960 - margin.right - margin.left,
-		        height = 800 - margin.top - margin.bottom;
-		    var i = 0,duration = 750,root,select2_data;
-		    var diameter = 960;
+		        width = 1000 - margin.right - margin.left,
+		        height = 1000 - margin.top - margin.bottom;
+		    var i = 0,duration = 750,root;
 		    var tree = d3.layout.tree()
 		        .size([height, width]);
 
@@ -61,7 +60,7 @@ function familiesVisualizations() {
 		    root.y0 = 0;
 		    update(root);
 
-		    d3.select(self.frameElement).style("height", "2000px");
+		    //d3.select(self.frameElement).style("height", "2000px");
 
     		function update(source) {
 	        // Compute the new tree layout.
