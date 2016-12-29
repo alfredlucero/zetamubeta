@@ -21,7 +21,7 @@ function AlfienityZmbController($route, brotherDataFactory) {
 
 		if (vm.addBrotherForm.$valid) {
 			brotherDataFactory.postBrother(postData).then(function(response) {
-				console.log(response);
+	
 				$route.reload();
 			}).catch(function(error) {
 				console.log(error);
@@ -41,7 +41,6 @@ function AlfienityZmbController($route, brotherDataFactory) {
 	vm.deleteBrother = function() {
 		brotherDataFactory.deleteBrother(vm.editBrotherNumber).then(function(response) {
 			vm.editBrotherData = response;
-			console.log(response);
 
 			vm.editBrotherDeleted = true;
 		}).catch(function(error) {

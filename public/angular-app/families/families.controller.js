@@ -1165,11 +1165,37 @@ function FamiliesController($scope){
 	];
 
 	$scope.familyTree = vm.familyTrees[0];
+	vm.familyTreeTitle = 'Flash';
 
   vm.setTab = function (tabId) {
       vm.tab = tabId;
       $scope.familyTree = vm.familyTrees[tabId];
-      console.log($scope.familyTree);
+      switch(tabId) {
+      	case 0: 
+      		vm.familyTreeTitle = 'Flash';
+      		break;
+      	case 1:
+      		vm.familyTreeTitle = 'Mighty';
+      		break;
+      	case 2:
+      		vm.familyTreeTitle = 'Elite';
+      		break;
+      	case 3:
+      		vm.familyTreeTitle = 'Aro';
+      		break;
+      	case 4:
+      		vm.familyTreeTitle = 'Flight';
+      		break;
+      	case 5:
+      		vm.familyTreeTitle = 'Butterfly';
+      		break;
+      	case 6:
+      		vm.familyTreeTitle = 'Flossy';
+      		break;
+      	case 7:
+      		vm.familyTreeTitle = 'Fiesta';
+      		break;
+      }
   };
 
   vm.isSet = function (tabId) {

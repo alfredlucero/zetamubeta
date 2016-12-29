@@ -77,7 +77,7 @@
 	</div>
 
 	<p>Semester Crossed:</p>
-	<input type="text" name="crossed" required ng-pattern="/^[A-Za-z]+\s[0-9]+$/" ng-model="vm.editBrotherData.crossed">
+	<input id="edit-brother-buttons" type="text" name="crossed" required ng-pattern="/^[A-Za-z]+\s[0-9]+$/" ng-model="vm.editBrotherData.crossed">
 	<div ng-show="vm.editBrotherForm.crossed.$dirty && vm.editBrotherForm.crossed.$invalid && vm.editBrotherSubmitted">
 		<p>Brother's semester crossed must have semester followed by the year (i.e. Fall 2008)</p>
 	</div>
@@ -87,27 +87,15 @@
 	<div ng-show="vm.editBrotherForm.family.$dirty && vm.editBrotherForm.family.$invalid && vm.editBrotherSubmitted">
 		<p>Brother's family name must have alphabetical characters (i.e. Elite).</p>
 	</div>
-	<button type="submit" class="btn col-xs-6">Edit</button>
+	<div id="edit-brothers-buttons" class="col-xs-12">
+		<button type="submit" class="btn col-xs-6">Edit</button>
+		<button type="button" class="btn col-xs-6"  ng-click="vm.deleteBrother()">Delete</button>
+		<p ng-show="vm.editBrotherUpdated">Brother {{ vm.editBrotherNumber }} updated</p>
+		<p ng-show="vm.editBrotherDeleted">Brother {{ vm.editBrotherNumber }} deleted</p>
+	</div>
 </form>
-	<button type="button" class="btn col-xs-6"  ng-click="vm.deleteBrother()">Delete</button>
-	<p ng-show="vm.editBrotherUpdated">Brother {{ vm.editBrotherNumber }} updated</p>
-	<p ng-show="vm.editBrotherDeleted">Brother {{ vm.editBrotherNumber }} deleted</p>
 
 
 <h3>Families</h3>
-<!-- <h4>Add Families to Database</h4>
-<form name="vm." ng-submit="vm.addReview()">		
-	Your rating: <input type="number" name="rating" required ng-pattern="/^[1-5]$/" ng-model="vm.rating">
-	<div ng-show="vm.reviewForm.rating.$dirty && vm.reviewForm.rating.$invalid && vm.isSubmitted">
-			<p>Rating must be between 1-5.</p>
-	</div>
-
-	Your review: <textarea name="review" required ng-model="vm.review"></textarea>
-	<div ng-show="vm.reviewForm.review.$dirty && vm.isSubmitted">
-		<p>Please add a review</p>
-	</div>
-
-	<button type="submit" class="btn">Add review</button>
-</form> -->
-
 <h4>Edit Families</h4>
+<p>Modify the familyTrees objects array in families.controller.js</p>
