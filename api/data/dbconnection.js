@@ -1,5 +1,5 @@
 var MongoClient = require('mongodb').MongoClient;
-var dburl = 'mongodb://localhost:27017/zmbdb';
+var dburl = (process.env.MONGODB_URI || 'mongodb://localhost:27017/zmbdb');
 
 var _connection = null;
 
