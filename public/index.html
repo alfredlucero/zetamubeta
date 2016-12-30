@@ -9,19 +9,20 @@
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/aos.css">
 	</head>
 	<body>
 		<div class="container-fluid">
 
 			<div class="row">
-				<h1 class="text-center">ZION'S MIGHTIEST BROTHERHOOD</h1>
+				<h1 class="text-center" data-aos="fade-in" data-aos-duration="3000">ZION'S MIGHTIEST BROTHERHOOD</h1>
 				<div id="zmb-nav" class="col-xs-12">
 					<div class="zmb-nav-tabs col-xs-4 text-center">
 						<h3 class="col-xs-12 col-md-4"><a href="#!/">ZMB</a></h3>
 						<h3 class="col-xs-12 col-md-4"><a href="#!/about">ABOUT</a></h3>
 						<h3 class="col-xs-12 col-md-4"><a href="#!/brothers">BROTHERS</a></h3>
 					</div>
-					<div class="col-xs-4 text-center">
+					<div class="col-xs-4 text-center" data-aos="fade-in" data-aos-duration="2000">
 						<div class="col-xs-12 thumbnail">
 					  	<img src="images/zmb-crest.png" alt="Zeta Mu Beta Crest" height="300" width="300">
 						</div>	
@@ -32,8 +33,8 @@
 						<h3 class="col-xs-12 col-md-4"><a href="#!/events">EVENTS</a></h3>
 					</div>
 				</div> <!-- end zmb-nav -->
-				<h2 class="text-center">ZETA MU BETA</h2>
-				<h3 class="text-center">EST. 2008</h3>
+				<h2 class="text-center" data-aos="fade-in" data-aos-duration="3000">ZETA MU BETA</h2>
+				<h3 class="text-center" data-aos="fade-in" data-aos-duration="3000">EST. 2008</h3>
 			</div> <!-- end row (navbar) -->
 
 			<div class="row">
@@ -55,10 +56,12 @@
 		<script src="node_modules/angular/angular.js"></script>
 		<script src="node_modules/angular-route/angular-route.js"></script>
 		<script src="angular-app/app.js"></script>
+		<script src="angular-app/aos.js"></script>
 		<script src="angular-app/brothers-list/brothers-list.controller.js"></script>
 		<script src="angular-app/brother-data-factory/brother-data-factory.js"></script>
 		<script src="angular-app/families/families.controller.js"></script>
 		<script src="angular-app/families/families-directive.js"></script>
 		<script src="angular-app/alfienityzmb/alfienityzmb.controller.js"></script>
+		<script>AOS.init();</script>
 	</body>
 </html>
