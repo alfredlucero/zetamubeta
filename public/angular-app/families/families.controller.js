@@ -350,7 +350,14 @@ function FamiliesController($scope){
 												"name": "Joel Morales",
 												"parent": "Eric Azpeitia",
 												"type": "brother",
-												"children": []
+												"children": [
+													{
+														"name": "Ani Nguyen",
+														"parent": "Joel Morales",
+														"type": "queen",
+														"children": []
+													}
+												]
 											},
 											{
 												"name": "John Saluta",
@@ -901,6 +908,12 @@ function FamiliesController($scope){
 														"children": []
 													}
 												]
+											},
+											{
+												"name": "Chantal Portolan",
+												"parent": "NA",
+												"type": "queen",
+												"children": []
 											}
 										]
 									},

@@ -43,14 +43,6 @@ function config($routeProvider) {
 				restricted: false
 			}
 		})
-		.when('/alfienityzmb', {
-			templateUrl: 'angular-app/alfienityzmb/alfienityzmb.html',
-			controller: AlfienityZmbController,
-			controllerAs: 'vm',
-			access: {
-				restricted: true
-			}
-		})
 		.otherwise({
 			redirectTo: '/'
 		});
