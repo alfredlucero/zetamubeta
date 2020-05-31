@@ -650,6 +650,12 @@ function FamiliesController($scope) {
                     ],
                   },
                   {
+                    name: "Jonkey Contada",
+                    parent: "Mark Thomas Labrador Carmona",
+                    type: "brother",
+                    children: [],
+                  },
+                  {
                     name: "Abby Bagsic",
                     parent: "Mark Thomas Labrador Carmona",
                     type: "queen",
