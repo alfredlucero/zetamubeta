@@ -23,7 +23,7 @@ function familiesVisualizations() {
       	var familyTree = newValue;
    
 		    var margin = { top: 50, right: 20, bottom: 20, left: 20 },
-		        width = 1000 - margin.right - margin.left,
+		        width = 2500 - margin.right - margin.left,
 		        height = 2000 - margin.top - margin.bottom;
 		    var i = 0,duration = 750,root;
 		    var tree = d3.layout.tree()
